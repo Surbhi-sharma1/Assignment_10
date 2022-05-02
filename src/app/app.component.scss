@@ -1,0 +1,43 @@
+body{
+  font-family:arial, helvetica, sans-serif;
+  background-color: rgb(205, 135, 222);
+}
+nav ul{ 
+  list-style-type:none;;
+  padding:0px;
+  margin:0px;
+  border:0px solid rgb(128, 98, 0);
+}
+nav li{
+  text-align:left;
+}
+nav a{
+  border: 2px solid pink;
+  font-size:1.2rem;
+  font-weight:bold;
+  color:purple;
+  text-decoration:none;
+  padding: 1px; 
+}
+
+nav a:hover{
+  color:white;
+  margin-bottom: 1rem;
+  background-color:rgb(221, 178, 235);
+}
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  }
+  
+  .toolbar img {
+  margin: 0 16px;
+  }
