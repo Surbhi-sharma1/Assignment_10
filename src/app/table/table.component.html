@@ -1,0 +1,35 @@
+<div class="panel-body">
+    <h2>User Data</h2>
+    <table class="table table-bordered">
+        <tr>
+            <td>id</td>
+            <td>FirstName</td>
+            <td>MiddleName</td>
+            <td>LastName</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Role</td>
+            <td>Customer</td>
+            <td>Address</td>
+            <th></th>
+            <th></th>
+            <th *ngIf="editable">Save</th>
+            <th *ngIf="editable">Cancel</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.firstname}}</td>
+                <td>{{user.middlename?'':'-'}}</td>
+                <td>{{user.lastname}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.role}}</td>
+                <td>{{user.customer}}</td>
+                <td>{{user.address}}</td>
+                <td><button type="button" class="btn btn-primary" (click)="Update(user)">Edit</button></td>
+                <td><button type="button" class="btn btn-danger" (click)="onDelete(user.id)">Delete</button></td>
+            </tr>
+        <tbody></tbody>
+    </table>
+</div>
